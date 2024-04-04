@@ -1,0 +1,114 @@
+
+.heading {
+  text-align: left;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 100%; */
+  height: .01rem;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 3rem;
+  padding: .5rem 2rem;
+  color: var(--dark);
+  background: #fff;
+  /* border: var(---border); */
+}
+
+.featured .featured-slider .box {
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  border: var(---border);
+  text-align: center;
+
+}
+
+.featured .featured-slider .box:hover {
+  border: var(---border);
+}
+
+.featured .featured-slider .box .image {
+  padding: 1rem;
+  background: linear-gradient(15deg, #eee 30%, #f0ca31 30.5%);
+}
+
+.featured .featured-slider .box .image img {
+  height: 25rem;
+}
+
+.featured .featured-slider .box:hover .image {
+  transform: translateY(6rem);
+}
+
+.featured .featured-slider .box .icons {
+  border-bottom: var(---border);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+  transform: translateY(-100%);
+}
+
+.featured .featured-slider .box:hover .icons {
+  transform: translateY(0%);
+}
+
+.featured .featured-slider .box .icons a {
+  color: var(--dark);
+  font-size: 2.2rem;
+  padding: 1.3rem 1.5rem;
+}
+
+.featured .featured-slider .box a:hover {
+  background: var(--Font-color);
+  color: #fff;
+}
+
+.featured .featured-slider .box .content {
+  background: #eee;
+  padding: 1.5rem;
+}
+
+.featured .featured-slider .box .content h3 {
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+
+.featured .featured-slider .box .content .price {
+  font-size: 2.2rem;
+  color: #4e4c4c;
+  padding-top: 1rem;
+}
+
+.featured .featured-slider .box .content .price span {
+  font-size: 1.5rem;
+  color: #989898;
+  text-decoration: line-through;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* border: var(---border); */
+  color: #000;
+  /* background: #fff; */
+  font-size: .2rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #000;
+  font-size: .2rem;
+}
